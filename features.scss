@@ -1,6 +1,7 @@
 section.features {
     @include grid-row();
     height: 12vh;
+    margin: 0px;
     
     h2 {
         font-size: 2.8em;
@@ -15,21 +16,25 @@ section.features {
             // Occupy 12 of the available 12 columns (full width).
             @include grid-column(12);
             text-align: center;
+            color: white;
             margin: 0px;
             padding: 0px;     
             border: 1px dotted black;
-            height: 70vh;  
-            display: inline-flex;     
+            height: 60vh;  
+            display: inline-flex; 
+            background-image: url(https://fieldnotes.imgix.net/images/products/fn_utility_hero2.jpg?auto=format&fit=crop&h=510&ixlib=php-1.1.0&q=55&w=1300&s=a0dfdb2b379c3809cc531db8b5c21e70);    
         }
 
        div.featureTWO  {
             // Occupy 8 of the available 12 columns (full width).
             @include grid-column(8);
             text-align: center;
+            color: white;
             margin: 0px;  
             border: 1px dotted black;
             height: 50vh;  
-            display: inline-flex;                          
+            display: inline-flex;    
+            background-image: url(https://fieldnotes.imgix.net/images/AB_brands.jpg?auto=format&ixlib=php-1.1.0&q=55&s=f795ccfa526ae21adadbf533b93ded92);                      
         }
 
        div.featureTHREE  {
@@ -39,7 +44,8 @@ section.features {
             margin: 0px;  
             border: 1px dotted black;   
             height: 50vh;  
-            display: inline-flex;      
+            display: inline-flex; 
+            background-image: url(https://fieldnotes.imgix.net/images/home_B_ledger.jpg?auto=format&ixlib=php-1.1.0&q=55&s=d77ca94d713b5825c0555f6ea61711c1);     
             
             p.georgia {
                 font-family: Georgia;

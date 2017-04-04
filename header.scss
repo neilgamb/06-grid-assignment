@@ -2,7 +2,7 @@ header {
     @include grid-row();
     height: 8vh;
     line-height: 8vh;
-    vertical-align: middle;  
+    margin: 0px;
 
         h1 {
             // Occupy 6 of the available 12 columns (full width).

@@ -1,0 +1,53 @@
+section.merch {
+    @include grid-row();
+    margin: 0px;
+
+    div.merchhead {
+        @include grid-column(12);
+        border: 1px dotted black;
+        text-align: center;
+        height: 30vh;
+        display: inline-flex;
+
+        h1 {
+            padding: 0px;
+            margin: 0px;    
+        }
+        
+        p {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div.text {
+            margin: auto;
+        }
+    }
+
+    div.product {
+        @include grid-column(3);
+        border: 1px dotted black;
+        text-align: center;
+        height: 70vh;
+        display: inline-flex;
+        margin: 0px;
+        padding: 0px;
+
+    }
+        p {
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p.cost {
+            color: red;
+        }
+
+}
+
+section.merch div.product:last-child:not(:first-child) {
+    float: none;
+}
