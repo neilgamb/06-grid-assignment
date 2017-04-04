@@ -1375,8 +1375,8 @@ header {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
-  height: 12vh;
-  line-height: 12vh;
+  height: 8vh;
+  line-height: 8vh;
   vertical-align: middle; }
   header::before, header::after {
     display: table;
@@ -1439,10 +1439,83 @@ header {
     justify-content: center; }
   header li {
     display: inline-block;
-    padding: 0px 20px; }
+    padding: 0px 20px;
+    line-height: 5vh; }
+
+section.features {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 12vh; }
+  section.features::before, section.features::after {
+    display: table;
+    content: ' '; }
+  section.features::after {
+    clear: both; }
+  section.features h2 {
+    font-size: 2.8em;
+    margin: 0px; }
+  section.features p {
+    font-weight: bold; }
+  section.features div.featureONE {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 1px dotted black;
+    height: 70vh;
+    display: inline-flex; }
+    @media print, screen and (min-width: 40em) {
+      section.features div.featureONE {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    section.features div.featureONE:last-child:not(:first-child) {
+      float: right; }
+  section.features div.featureTWO {
+    width: 66.66667%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: center;
+    margin: 0px;
+    border: 1px dotted black;
+    height: 50vh;
+    display: inline-flex; }
+    @media print, screen and (min-width: 40em) {
+      section.features div.featureTWO {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    section.features div.featureTWO:last-child:not(:first-child) {
+      float: right; }
+  section.features div.featureTHREE {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: center;
+    margin: 0px;
+    border: 1px dotted black;
+    height: 50vh;
+    display: inline-flex; }
+    @media print, screen and (min-width: 40em) {
+      section.features div.featureTHREE {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    section.features div.featureTHREE:last-child:not(:first-child) {
+      float: right; }
+    section.features div.featureTHREE p.georgia {
+      font-family: Georgia; }
+  section.features div.text {
+    margin: auto;
+    padding: 10px; }
 
 footer {
-  position: fixed;
-  bottom: 0px; }
+  display: block;
+  position: relative;
+  bottom: 0px;
+  width: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

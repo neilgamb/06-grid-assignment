@@ -1,7 +1,7 @@
 header {
     @include grid-row();
-    height: 12vh;
-    line-height: 12vh;
+    height: 8vh;
+    line-height: 8vh;
     vertical-align: middle;  
 
         h1 {
@@ -27,10 +27,6 @@ header {
             margin: 0px;                         
         }
 
-        h1, h3 {
-            //border-left: none;
-        }
-
         div {
             @include grid-column(8);
             text-align: center;
@@ -52,5 +48,7 @@ header {
         li {
             display: inline-block;
             padding: 0px 20px;
+            line-height: 5vh;
+
         }
 }

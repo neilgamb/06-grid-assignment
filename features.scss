@@ -1,0 +1,55 @@
+section.features {
+    @include grid-row();
+    height: 12vh;
+    
+    h2 {
+        font-size: 2.8em;
+        margin: 0px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+       div.featureONE  {
+            // Occupy 12 of the available 12 columns (full width).
+            @include grid-column(12);
+            text-align: center;
+            margin: 0px;
+            padding: 0px;     
+            border: 1px dotted black;
+            height: 70vh;  
+            display: inline-flex;     
+        }
+
+       div.featureTWO  {
+            // Occupy 8 of the available 12 columns (full width).
+            @include grid-column(8);
+            text-align: center;
+            margin: 0px;  
+            border: 1px dotted black;
+            height: 50vh;  
+            display: inline-flex;                          
+        }
+
+       div.featureTHREE  {
+            // Occupy 4 of the available 12 columns (full width).
+            @include grid-column(4);
+            text-align: center;
+            margin: 0px;  
+            border: 1px dotted black;   
+            height: 50vh;  
+            display: inline-flex;      
+            
+            p.georgia {
+                font-family: Georgia;
+            }
+        }
+
+        div.text {
+            margin: auto;
+            padding: 10px;
+        }
+}
+
+
