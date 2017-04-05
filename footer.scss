@@ -1,6 +1,70 @@
 footer {
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    width: 100vh;
+    @include grid-row();
+    margin: 0px;
+    background-color: #AD8D5B;
+
+        section.main {
+        @include grid-column(4);
+        border: 1px dotted black;
+        text-align: center;
+        height: 50vh;
+        display: block;
+
+            h3 {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 20px 0px 30px 20px;
+                font-size: 1em;
+            }
+
+            div {
+                text-align: left;
+            }
+
+            ul {
+                display: inline-block;
+                margin: 0px;
+                padding: 20px;
+                list-style-type: none;
+            }
+
+            li {
+                //display: inline-block;
+                margin: 0px;
+                padding: 0px;
+                text-align: left;
+                font-weight: bold;
+                font-size: .8em;
+            }
+
+            div.mainmiddle {
+                text-align: center;
+            }
+
+            div.mainright {
+                
+                h3 {
+                    text-align: right;
+                    padding: 20px 20px 30px 0px;
+                }
+
+                div.subscribe {
+                    border: 1px dotted black;
+                    width: 75%;
+                    height: 15vh;
+                    text-align: right;
+                }
+            }
+
+        }
+    
+        section.bottom {
+        @include grid-column(4);
+        border: 1px dotted black;
+        text-align: center;
+        height: 15vh;
+        display: inline-flex;
+        }
+
 }

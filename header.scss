@@ -3,6 +3,8 @@ header {
     height: 8vh;
     line-height: 8vh;
     margin: 0px;
+    border-top: 4px solid #A88A57;
+    padding-top: 10px;
 
         h1 {
             // Occupy 6 of the available 12 columns (full width).
@@ -14,7 +16,7 @@ header {
         h2 {
             @include grid-column(2);
             text-align: center; 
-            border: 1px dotted black;
+            //border: 1px dotted black;
             font-size: .75em;
             margin: 0px;         
         }
@@ -22,7 +24,7 @@ header {
         h3 {
             @include grid-column(1);
             text-align: center;
-            border: 1px dotted black; 
+            //border: 1px dotted black; 
             font-size: .75em;
             margin: 0px;                         
         }
@@ -30,7 +32,7 @@ header {
         div {
             @include grid-column(8);
             text-align: center;
-            border: 1px dotted black; 
+            //border: 1px dotted black; 
         }
 
         nav {
@@ -49,6 +51,7 @@ header {
             display: inline-block;
             padding: 0px 20px;
             line-height: 5vh;
-
+            font-weight: bold;
         }
+
 }
